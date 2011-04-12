@@ -29,5 +29,5 @@ package: all
 	cp display-mirroring deb/usr/bin/
 	dpkg-deb -b deb display-mirroring-$(VERSION).deb
 
-transfer: all
+transfer: package
 	scp *.deb root@$(IP):
