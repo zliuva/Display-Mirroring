@@ -1,0 +1,6 @@
+*DS_Store*
+*.deb
+*.o
+display-mirroring
+/deb/usr/bin/*
+

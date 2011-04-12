@@ -1,0 +1,10 @@
+Package: com.softboysxp.display-mirroring
+Name: Display Mirroring
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Enables Display Mirroring (with Apple VGA Adaptor or Apple Digital AV Adaptor) on iPad (Original), iPhone 4 and iPod Touch (4th Gen). Also adds a command-line utility "display-mirroring <yes/no>" to toggle the feature. You may need to reboot your device after installation for the change to take effect.
+Maintainer: softboysxp <dev@softboysxp.com>
+Author: softboysxp <dev@softboysxp.com>
+Depends: firmware (>= 4.3.1)
+Section: Tweaks
+dev: softboysxp

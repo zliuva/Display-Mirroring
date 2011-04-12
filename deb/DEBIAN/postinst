@@ -1,0 +1,5 @@
+#!/bin/sh
+chown root:wheel /usr/bin/display-mirroring
+chmod +s /usr/bin/display-mirroring
+/usr/bin/display-mirroring yes
+
