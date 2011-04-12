@@ -1,0 +1,6 @@
+This small utility enables the native Display Mirroring support in iOS 4.3.1 for original iPad, iPhone 4 and iPod Touch (4th Gen).
+
+When installing from Cydia (waiting for the big boss repo to host the deb now), the utility automatically enables display mirroring and you should be ready to go. On rare occasions you may need to reboot your device. Note that iOS does not mirror the lock screen (at least not on my devices).
+
+After installing you'll have access to a command line tool 'display-mirroring', you can toggle the feature by passing 'yes' or 'no' as the parameter. When no parameter is supplied, the tool simply outputs current status of the feature.
+
