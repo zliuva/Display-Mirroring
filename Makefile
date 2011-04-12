@@ -26,6 +26,7 @@ clean:
 	rm -f *.deb
 
 package: all
+	mkdir -p deb/usr/bin
 	cp display-mirroring deb/usr/bin/
 	dpkg-deb -b deb display-mirroring-$(VERSION).deb
 
