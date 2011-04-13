@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
 	NSLog(@"Display Mirroring %@", (isEnabled() ? @"Enabled" : @"Disabled"));
 }
 
-__attribute__((constructor)) static void toggle_initializer() {
+__attribute__((constructor)) static void initializer() {
 	pool = [[NSAutoreleasePool alloc] init];
 	
 	NSArray *plists = [NSArray arrayWithObjects: @"K48AP",		// iPad
@@ -57,6 +57,7 @@ __attribute__((constructor)) static void toggle_initializer() {
 	}
 }
 
-__attribute__((destructor)) static void toggle_finalizer() {
+__attribute__((destructor)) static void finalizer() {
 	[pool release];
 }
+

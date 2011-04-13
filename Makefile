@@ -21,7 +21,7 @@ display-mirroring: $(TARGETS)
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
 
 clean:
-	rm -f *.o
+	rm -f display-mirroring 
 	rm -f $(TARGETS)
 	rm -f *.deb
 
@@ -32,3 +32,4 @@ package: all
 
 transfer: package
 	scp *.deb root@$(IP):
+
